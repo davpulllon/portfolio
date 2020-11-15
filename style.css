@@ -1,0 +1,223 @@
+*{
+		
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+	overflow: hidden;
+}
+body{
+	font-size: 1.6em !important;
+}
+
+#navbar_one{
+	font-family: 'Roboto Mono', monospace;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	background-color: rgba(0,0,0,0.6) !important;
+	padding:20px;
+	
+
+
+}
+#navbar_one li{
+	font-size: 1em;
+	padding-top: 10px;
+	
+
+}
+
+
+
+.nav-item > .nav-link{
+	color: white !important;
+	padding:0 2em !important;
+}
+
+.nav-item > .nav-link:hover{
+	color: #a2de8c !important;
+
+}
+.img-fluid{
+	max-height: 800px;
+	width: 100%;
+}
+.heading-content{
+	position:absolute;
+	top:12%;
+	width:100%;
+	max-width:100%;
+	color:#e5f5ed;
+
+}
+.heading-content h5{
+	font-size: 3em;
+	font-weight:300;
+	padding-bottom: 30px
+
+}
+.heading-content h1{
+	letter-spacing:2px;
+	overflow: hidden;
+
+}
+#text{
+	font-family: 'Open Sans Condensed', sans-serif;
+	word-spacing: 5px;
+	padding-top: 20px;
+	font-size: 2.5em;
+}
+.highlight{
+	background-color:red;
+	color:black;
+}
+
+/*-------------------------------------About section----------------------------------------------*/
+.p_one{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+#about .btn{
+	border: 2px solid red;
+	width: 30%;
+	padding:15px 22px;
+	background: #000;
+	border-radius: 5px;
+	margin-left: 35%;
+}
+.column-2{
+	line-height: 1.8 !important;
+}
+
+/*-------------------Our service section------------------------*/
+.icon-one > img,
+.icon-two > img{
+	width: 100px;
+}
+
+.first-service span{
+	font-size:1.5em !important;
+	margin:10px !important;
+	
+}
+  .listPerson {
+        display: inline-block;
+        margin-left: 15px;
+       
+        font-size: 20px;
+    }
+
+.service-box i{
+	font-size: 1em;
+	padding: 20px;
+
+	
+
+}
+
+.col-lg-6 {
+    width: 50%;
+  }
+.col-md-6 {
+    width: 50%; /*Both cols have float: left also*/
+  }
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+    margin-top: 30px;
+   line-height: 1.6;
+}
+#service  img{
+	width: 100%;
+	height: 200px;
+}
+/*---------------------finish service section------*/
+/*------------our site-----------*/
+.card-body h5{
+	font-size: 1.3em;
+
+}
+
+#p_form{
+	line-height: 1.8;
+}
+ .icon-one,.icon-two{
+	margin: 20px;
+}
+
+
+#btn-secondary{
+	width: 50% !important;
+	background-color: grey !important;
+	border-radius: 20px !important;
+	padding:10px !important;
+
+
+}
+#btn-secondary:hover{
+	width: 50% !important;
+	background-color: white !important;
+	color: black !important;
+	
+
+
+
+}
+
+.trial{
+	color:green !important;
+}
+/*------------form------------*/
+#myForm{
+	font-size: 2em;
+}
+#form_button{
+	border: 2px solid red;
+	width: 30%;
+	padding:15px 22px;
+	background: #000;
+	border-radius: 5px;
+	
+
+}
+
+/*--------page footer-----------------------*/
+.page-footer{
+	background-color: grey;
+}
+.page-footer a, i{
+	color: white;
+}
+page-footer a, i:hover{
+	color:blue;
+}
+.footer-copyright{
+	background-color: black;
+	color: white;
+}
+#footer-list{
+	font-size: 0.6em;
+}
+#social-media i{
+		margin: 10px;
+	}
+}
+/*----------------------media query----------------*/
+@media (min-width: 1200px) {
+	.heading-content{
+	position:absolute;
+	top:22% !important;
+	width:100%;
+	max-width:100%;
+	color:#e5f5ed;
+
+}
+	#social-media i{
+		margin: 10px;
+	}
+
+}
+	
