@@ -138,8 +138,12 @@ body{
 /*------------our site-----------*/
 .card-body h5{
 	font-size: 1.3em;
-	max-height:100px;
 
+
+}
+.card{
+	max-height:400px !important
+   
 }
 
 #p_form{
