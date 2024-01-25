@@ -15,7 +15,12 @@
     
     <section class="blog">
         <h1 class="heading">Blog</h1>
-            <button class="btn">Back to site</button>
+            <button class="btn" onclick="goback()">Back to site</button>
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
 
         <div class="box-container">
@@ -23,7 +28,7 @@
             <div class="box shadow">
 
                 <div class="image">
-                    <img src="blog_1.jpg" alt="">
+                    <img src="javascript.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Do You Want Your Blog To Stand Alone Or Support Another Site?</h3>
