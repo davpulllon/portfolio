@@ -73,6 +73,25 @@
                 padding: 10px;
             }
         }
+           /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for screens up to 600px wide */
+           
+           body{
+            font-size: 10px;
+           }
+            header {
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,8 +136,7 @@
 <ol>
           <li><b>var (historical usage)</b>: Variables declared with var are function-scoped. This means they are only accessible within the function in which they are declared.</li>
           <pre>
-           <code>
-               var age = 25; // Declaring a variable 'age' with the value 25
+           <code>var age = 25; // Declaring a variable 'age' with the value 25
            </code>
           </pre>
             
@@ -127,14 +145,14 @@
             <li><b>let (modern usage)</b>: Introduced in ECMAScript 6 (ES6), let allows for block-scoping. Block-scoped variables are limited to the block (enclosed by curly braces) in which they are defined.</li>
             <pre>
             <code>
-                let name = 'John'; // Declaring a variable 'name' with the value 'John'
+let name = 'John'; // Declaring a variable 'name' with the value 'John'
             </code>
             </pre>
 
              <li><b>const (constant)</b>: Variables declared with const are block-scoped like let, but their values cannot be reassigned after initialization. This is useful for declaring constants.</li>
              <pre>
                 <code>
-                 const PI = 3.14; // Declaring a constant 'PI' with the value 3.14
+const PI = 3.14; // Declaring a constant 'PI' with the value 3.14
                 </code>
             </pre>
             
@@ -156,10 +174,10 @@
               Example:</li>
            <pre>
            <code>
-               function greet(name) {
-                       console.log("Hello, " + name + "!");
+function greet(name) {
+ console.log("Hello, " + name + "!");
 
-                        }
+}
 
 
             </code>
@@ -171,10 +189,10 @@
             </li>
             <pre>
             <code>
-                    function multiply(a, b) {
+function multiply(a, b) {
 
-                                      return a * b;
-                                  }
+ return a * b;
+}
 
                   
             </code>
@@ -183,19 +201,19 @@
             <li><b>Invocation</b>: Functions are executed or invoked by calling their name followed by parentheses, optionally passing values (arguments) to the parameters. Example:</li>
             <pre>
               <code>
-                  greet("John"); // Output: Hello, John!
-                  let result = multiply(3, 4); // Result is now 12
+greet("John"); // Output: Hello, John!
+let result = multiply(3, 4); // Result is now 12
 
              </code>
             </pre>
               <li><b>Return Statement</b>:A function may use the return statement to send a value back to the calling code. If no return statement is present, the function returns undefined by default. Example:</li>
             <pre>
               <code>
-                  function add(a, b) {
-                              return a + b;
+function add(a, b) {
+return a + b;
                                  }
 
-                   let sum = add(5, 3); // Sum is now 8
+let sum = add(5, 3); // Sum is now 8
 
              </code>
             </pre>
@@ -213,12 +231,12 @@
          DOM manipulation allows developers to dynamically update the content, structure, and style of a web page in response to user actions, events, or other changes in the application state. Here's a simple example:</p>
         <pre>
             <code>
-            &lt;div id="myElement"&gt;This is a div&lt;/div&gt;
+&lt;div id="myElement"&gt;This is a div&lt;/div&gt;
 
-            &lt;script&gt;
-            let element = document.getElementById("myElement");
-            element.innerHTML = "Content updated!";
-            &lt;/script&gt;
+&lt;script&gt;
+let element = document.getElementById("myElement");
+element.innerHTML = "Content updated!";
+&lt;/script&gt;
             </code>
         </pre>
     </section>
