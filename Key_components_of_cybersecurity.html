@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Your Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+         button {
+            font-size: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+        #next{
+            float: right;
+
+        }
+  
+
+        @media (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+        }
+         /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for screens up to 600px wide */
+            body{
+
+                font-size: 11px ;
+            }
+           
+            header {
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1></h1>
+    </header>
+     <button onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> Go Back
+    </button>
+
+     <button id="next" onclick="goNext()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>Next Post
+    </button>
+
+    
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+         function goNext() {
+            window.location.href = 'https://www.eire-webdesign.com/';
+        }
+    </script>
+
+    <figure>
+        <img src="cybersecurity.jpg" width="600" height= "200" lt="Blog Header Image">
+    </figure>
+
+    <main>
+        <article>
+            <h2>5 Key Components of Cybersecurity</h2>
+            <p>Author: Davichi</p>
+            <p>Date: January 18, 2023</p>
+             <section>
+               <p>In an era dominated by technology, where our lives are increasingly intertwined with the digital realm, the importance of cybersecurity cannot be overstated. As we leverage the power of the internet for communication, commerce, and connectivity, the threats to our digital well-being have grown exponentially. Cybersecurity, therefore, stands as the gatekeeper, protecting our sensitive information, privacy, and the very foundation of our interconnected world</p>
+               <p><b>The Evolving Landscape of Cyber Threats:</b></p>
+                <p>The digital landscape is constantly evolving, and with it, so are cyber threats. From simple viruses and malware to sophisticated phishing attacks and ransomware, the arsenal of cybercriminals is diverse and ever-expanding. As our reliance on digital platforms grows, so does the motivation for malicious actors to exploit vulnerabilities in our systems, that's why is important for Businesses to understand some Key components of Cybersecurity, as much as having a good <a href="http://businesswebx.epizy.com/masterful-link-building-strategies-for-maximum-impact/">link-building strategies to move up in the Searching Engines.</a></p>
+                <p><b>Here are 5 Key Components of Cybersecurity:</b></p>
+              <section> 
+    
+        <ol>
+          <li><b>Network Security</b>: Protecting the integrity and confidentiality of data as it traverses networks is fundamental. This involves implementing firewalls, intrusion detection systems, and <a href="https://www.cisco.com/c/en/us/products/security/vpn-endpoint-security-clients/what-is-vpn.html">virtual private networks (VPNs)</a> to create a secure network environment.</li>
+          <br>
+          <li><b>Endpoint Security</b>: With the proliferation of devices connected to networks, securing individual endpoints such as computers, smartphones, and IoT devices is critical. Antivirus software, encryption, and regular software updates play a pivotal role in mitigating risks.</li>
+          <br>
+          <li><b>Data Security</b>: Safeguarding sensitive data is paramount. Encryption, access controls, and regular data backups are essential components of data security strategies. In the event of a cyber attack, having a backup ensures that data can be restored, minimizing potential losses.</li>
+          <br>
+          <li><b>Identity and Access Management (IAM)</b>: Controlling access to systems and data is crucial for preventing unauthorized access. IAM systems manage user identities, ensuring that individuals have the appropriate level of access based on their roles and responsibilities.</li>
+          <br>
+          <li><b>Security Awareness and Training</b>: Human error remains a significant factor in cyber threats. Educating users about best practices, recognizing phishing attempts, and promoting a culture of cybersecurity awareness are vital in fortifying the human firewall.
+            </li>
+        </ol>
+ </section>
+ <p><b>The Role of Artificial Intelligence (AI) and Machine Learning (ML):</b></p>
+ <p>In the arms race between cyber defenders and attackers, AI and ML have emerged as powerful allies in the realm of cybersecurity. These technologies can analyze vast amounts of data, identify patterns, and detect anomalies that may indicate a potential security threat. Automated responses to threats, such as blocking malicious activities in real-time, are becoming increasingly common, enhancing the speed and efficiency of cybersecurity measures.</p>
+  <p><b>The Future of Cybersecurity:</b></p>
+ <p>As technology continues to advance, so too will the tactics employed by cybercriminals. The future of cybersecurity will likely see increased integration of AI and ML, enhanced collaboration between governments and private entities, and a heightened focus on securing emerging technologies like the <a href="https://en.wikipedia.org/wiki/Internet_of_things">Internet of things</a>(IoT) and 5G networks.</p>
+
+
+<section>
+        
+      <p><b>Conclusion</b></p>
+      <blockquote>
+        <p>In a world where our daily lives are increasingly digitized, the importance of cybersecurity cannot be overstated. It is not merely a technological concern but a societal imperative. By adopting a proactive approach, investing in advanced technologies, and fostering a culture of cybersecurity awareness, we can navigate the digital landscape with confidence, ensuring a secure and resilient future for individuals, businesses, and nations alike.</p>
+        
+    </blockquote>
+        </article>
+
+        <!-- Add more articles as needed -->
+    </main>
+
+    <footer>
+        &copy;Eire-Wedesign 2020 Blog All rights reserved.
+    </footer>
+
+</body>
+</html>
