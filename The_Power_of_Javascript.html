@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Your Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+         button {
+            font-size: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #next{
+            float: right;
+
+        }
+  
+
+        @media (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+        }
+           /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for screens up to 600px wide */
+            body{
+
+                font-size: 11px ;
+            }
+           
+            header {
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Power of JavaScript: A Code-Centric Odyssey</h1>
+    </header>
+     <button onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> Go Back
+    </button>
+
+     <button id="next" onclick="goNext()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>Next Post
+    </button>
+
+    
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+         function goNext() {
+            window.location.href = 'post_2.html';
+
+        }
+    </script>
+
+    <figure>
+        <img src="javascript.jpg" width="600" height= "200" lt="Blog Header Image">
+    </figure>
+
+    <main>
+        <article>
+            <h2>The Power of JavaScript: A Code-Centric Odyssey</h2>
+            <p>Author: Davichi</p>
+            <p>Date: January 23, 2021</p>
+             <section>
+               <p>JavaScript is a versatile programming language that plays a crucial role in web development, wheter you are a professional or a <a href="https://techfriki.net/">Techfriki</a> (as i like to call a Tech freak) it's an important one to learn, One of its fundamental features is the use of variables, which act as containers for storing and manipulating data. In addition to variables, JavaScript supports various data types that define the nature of the values these variables can hold. In this blog post, we'll delve into the world of JavaScript variables and explore the diverse data types at your disposal.</p>
+              <section>
+        <h2>1. Variables and Data Types</h2>
+        <p>In JavaScript, you can use variables to store and manipulate data.           
+           A JavaScript variable is a named container used to store and manage data within a program. These named containers allow developers to reference and manipulate values in their code. Variables provide a way to work with data dynamically, enabling the creation of flexible and interactive programs.
+
+           In JavaScript, variables are declared using the var, let, or const keywords, followed by a unique identifier (the variable name). The choice of keyword depends on the desired scope and mutability of the variable:
+<ol>
+          <li><b>var (historical usage)</b>: Variables declared with var are function-scoped. This means they are only accessible within the function in which they are declared.</li>
+<pre>
+<code>
+var age = 25; 
+// Declaring a variable 'age' with the value 25
+</code>
+ </pre>
+            
+
+
+            <li><b>let (modern usage)</b>: Introduced in ECMAScript 6 (ES6), let allows for block-scoping. Block-scoped variables are limited to the block (enclosed by curly braces) in which they are defined.</li>
+<pre>
+<code>
+let name = 'John'; 
+// Declaring a variable 'name' with the value 'John'
+</code>
+</pre>
+
+             <li><b>const (constant)</b>: Variables declared with const are block-scoped like let, but their values cannot be reassigned after initialization. This is useful for declaring constants.</li>
+<pre>
+<code>
+const PI = 3.14;
+// Declaring a constant 'PI' with the value 3.14
+</code>
+</pre>
+            
+            
+
+
+
+</ol>
+<p>Once a variable is declared, its value can be updated or modified throughout the program. Variables provide a way to store various types of data, including numbers, strings, booleans, objects, and more, making JavaScript a <a href="https://www.baeldung.com/cs/statically-vs-dynamically-typed-languages">dynamically-typed language.</a></p>
+ </section>
+
+    <section>
+        <h2>2. Functions and Control Flow</h2>
+        <p>A JavaScript function is a block of reusable code designed to perform a specific task or calculate a value. Functions are a fundamental concept in programming and are essential for organizing and structuring code. They allow you to break down a program into smaller, manageable pieces, making it easier to understand, debug, and maintain.
+
+        Here are key characteristics and components of a JavaScript function:</p>
+        <ol>
+          <li><b>Declaration</b>: Functions are declared using the function keyword, followed by the function name.
+              Example:</li>
+<pre>
+<code>
+function greet(name) {
+console.log("Hello, " + name 
+}
+</code>
+</pre>
+            
+
+
+            <li><b>Parameters</b>:Parameters are variables listed in the function declaration. They act as placeholders for the values that the function will receive when it is invoked. Example:
+            </li>
+<pre>
+<code>
+function multiply(a, b) {
+
+return a * b;
+ }
+</code>
+</pre>
+
+            <li><b>Invocation</b>: Functions are executed or invoked by calling their name followed by parentheses, optionally passing values (arguments) to the parameters. Example:</li>
+<pre>
+<code>
+greet("John"); // Output: Hello, John!
+let result = multiply(3, 4); 
+// Result is now 12
+</code>
+</pre>
+              <li><b>Return Statement</b>:A function may use the return statement to send a value back to the calling code. If no return statement is present, the function returns undefined by default. Example:</li>
+<pre>
+<code>
+function add(a, b) {
+return a + b;
+}
+let sum = add(5, 3); 
+// Sum is now 8
+ </code>
+</pre>
+            
+        </ol>
+        <p>Functions play a crucial role in structuring JavaScript code, promoting reusability, and enabling modular development. They are a key feature of both basic scripting and advanced programming in the language.</p>
+ 
+    </section>
+
+    <section>
+        <h2>3. DOM Manipulation</h2>
+        <p>
+         DOM (Document Object Model) manipulation refers to the process of interacting with and modifying the HTML and XML documents using JavaScript. The DOM represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text.
+
+         DOM manipulation allows developers to dynamically update the content, structure, and style of a web page in response to user actions, events, or other changes in the application state. Here's a simple example:</p>
+<pre>
+<code>
+&lt;div id="myElement"&gt;This is a div&lt;/div&gt;
+&lt;script&gt;
+let element = document.getElementById("myElement");
+element.innerHTML = "Content updated!";
+&lt;/script&gt;
+</code>
+</pre>
+    </section>
+
+    <blockquote>
+        <p>Remember "JavaScript is not just a language; it's a way to bring ideas to life on the web." if you enjoy this article and want to practice your Javascript skills you can code some exrcise in  <a href="https://www.w3schools.com/js/js_exercises.asp">here</a></p>
+        <footer>— The JavaScript Explorer</footer>
+    </blockquote>
+        </article>
+
+        <!-- Add more articles as needed -->
+    </main>
+
+    <footer>
+        &copy;Eire-Wedesign 2020 Blog All rights reserved.
+    </footer>
+
+</body>
+</html>
