@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Your Blog</title>
@@ -12,7 +12,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-          
         }
 
         header {
@@ -74,7 +73,26 @@
                 padding: 10px;
             }
         }
-   
+           /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for screens up to 600px wide */
+            body{
+
+                font-size: 11px ;
+            }
+           
+            header {
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -97,6 +115,10 @@
         function goBack() {
             window.history.back();
         }
+         function goNext() {
+            window.location.href = 'post_2.html';
+
+        }
     </script>
 
     <figure>
@@ -118,26 +140,30 @@
            In JavaScript, variables are declared using the var, let, or const keywords, followed by a unique identifier (the variable name). The choice of keyword depends on the desired scope and mutability of the variable:
 <ol>
           <li><b>var (historical usage)</b>: Variables declared with var are function-scoped. This means they are only accessible within the function in which they are declared.</li>
-          <pre>
-           <code>var age = 25; // Declaring a variable 'age' with the value 25
-           </code>
-          </pre>
+<pre>
+<code>
+var age = 25; 
+// Declaring a variable 'age' with the value 25
+</code>
+ </pre>
             
 
 
             <li><b>let (modern usage)</b>: Introduced in ECMAScript 6 (ES6), let allows for block-scoping. Block-scoped variables are limited to the block (enclosed by curly braces) in which they are defined.</li>
-            <pre>
-            <code>
-let name = 'John'; // Declaring a variable 'name' with the value 'John'
-            </code>
-            </pre>
+<pre>
+<code>
+let name = 'John'; 
+// Declaring a variable 'name' with the value 'John'
+</code>
+</pre>
 
              <li><b>const (constant)</b>: Variables declared with const are block-scoped like let, but their values cannot be reassigned after initialization. This is useful for declaring constants.</li>
-             <pre>
-                <code>
-const PI = 3.14; // Declaring a constant 'PI' with the value 3.14
-                </code>
-            </pre>
+<pre>
+<code>
+const PI = 3.14;
+// Declaring a constant 'PI' with the value 3.14
+</code>
+</pre>
             
             
 
@@ -155,51 +181,45 @@ const PI = 3.14; // Declaring a constant 'PI' with the value 3.14
         <ol>
           <li><b>Declaration</b>: Functions are declared using the function keyword, followed by the function name.
               Example:</li>
-           <pre>
-           <code>
+<pre>
+<code>
 function greet(name) {
- console.log("Hello, " + name + "!");
-
+console.log("Hello, " + name 
 }
-
-
-            </code>
-            </pre>
+</code>
+</pre>
             
 
 
             <li><b>Parameters</b>:Parameters are variables listed in the function declaration. They act as placeholders for the values that the function will receive when it is invoked. Example:
             </li>
-            <pre>
-            <code>
+<pre>
+<code>
 function multiply(a, b) {
 
- return a * b;
-}
-
-                  
-            </code>
-            </pre>
+return a * b;
+ }
+</code>
+</pre>
 
             <li><b>Invocation</b>: Functions are executed or invoked by calling their name followed by parentheses, optionally passing values (arguments) to the parameters. Example:</li>
-            <pre>
-              <code>
+<pre>
+<code>
 greet("John"); // Output: Hello, John!
-let result = multiply(3, 4); // Result is now 12
-
-             </code>
-            </pre>
+let result = multiply(3, 4); 
+// Result is now 12
+</code>
+</pre>
               <li><b>Return Statement</b>:A function may use the return statement to send a value back to the calling code. If no return statement is present, the function returns undefined by default. Example:</li>
-            <pre>
-              <code>
+<pre>
+<code>
 function add(a, b) {
 return a + b;
-                                 }
-
-let sum = add(5, 3); // Sum is now 8
-
-             </code>
-            </pre>
+}
+let sum = add(5, 3); 
+// Sum is now 8
+ </code>
+</pre>
             
         </ol>
         <p>Functions play a crucial role in structuring JavaScript code, promoting reusability, and enabling modular development. They are a key feature of both basic scripting and advanced programming in the language.</p>
@@ -212,16 +232,15 @@ let sum = add(5, 3); // Sum is now 8
          DOM (Document Object Model) manipulation refers to the process of interacting with and modifying the HTML and XML documents using JavaScript. The DOM represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text.
 
          DOM manipulation allows developers to dynamically update the content, structure, and style of a web page in response to user actions, events, or other changes in the application state. Here's a simple example:</p>
-        <pre>
-            <code>
+<pre>
+<code>
 &lt;div id="myElement"&gt;This is a div&lt;/div&gt;
-
 &lt;script&gt;
 let element = document.getElementById("myElement");
 element.innerHTML = "Content updated!";
 &lt;/script&gt;
-            </code>
-        </pre>
+</code>
+</pre>
     </section>
 
     <blockquote>
