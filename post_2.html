@@ -73,6 +73,26 @@
                 padding: 10px;
             }
         }
+         /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for screens up to 600px wide */
+            body{
+
+                font-size: 11px ;
+            }
+           
+            header {
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,6 +114,9 @@
     <script>
         function goBack() {
             window.history.back();
+        }
+         function goNext() {
+            window.location.href = 'https://www.eire-webdesign.com/';
         }
     </script>
 
